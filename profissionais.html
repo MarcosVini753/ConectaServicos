@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123e36">
+  <meta name="description" content="Apresente sua especialidade e registre seu interesse no protótipo ConectaServiços.">
+  <meta name="robots" content="noindex, follow">
+  <title>Cadastro profissional | ConectaServiços</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/brand.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="demo-bar"><div class="container demo-inner"><span class="status-dot"></span> Projeto acadêmico demonstrativo <span class="demo-sep">·</span> Sem atendimentos reais nesta versão</div></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/index.html" aria-label="ConectaServiços — início"><img src="/assets/brand.svg" alt="" width="38" height="38"><span>Conecta<strong>Serviços</strong></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false" data-menu-toggle><svg class="icon menu-open" aria-hidden="true"><use href="/assets/icons.svg#menu"></use></svg><svg class="icon menu-close" aria-hidden="true"><use href="/assets/icons.svg#close"></use></svg></button>
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="/index.html#servicos">Serviços</a>
+        <a href="/index.html#como-funciona">Como funciona</a>
+        <a href="/index.html#profissionais">Para profissionais</a>
+        <a href="/index.html#duvidas">Dúvidas</a>
+        <a class="mobile-nav-cta" href="/solicitar.html">Solicitar serviço <svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#arrow-up-right"></use></svg></a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="/solicitar.html">Solicitar serviço <svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#arrow-up-right"></use></svg></a>
+    </div>
+  </header>
+  <main id="conteudo"><section class="form-page"><div class="container form-layout">
+ <div class="form-hero"><a href="/index.html" class="back-link"><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#arrow-left"></use></svg> Voltar ao início</a><p class="kicker">Cadastro profissional</p><h1>Conte um pouco sobre o seu trabalho.</h1><p>Registre seu interesse em participar desta proposta de plataforma de serviços.</p><ul class="form-points"><li><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#check-circle"></use></svg> Informe sua especialidade</li><li><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#check-circle"></use></svg> Indique sua região de atuação</li><li><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#check-circle"></use></svg> Receba a confirmação do cadastro</li></ul><div class="form-demo-note"><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#info"></use></svg> Esta é uma experiência acadêmica. Para testes, utilize apenas dados fictícios.</div></div>
+ <div class="form-card"><div class="form-card-head"><span class="form-step-label">FORMULÁRIO · PROFISSIONAL</span><h2>Sou profissional</h2><p>Os campos marcados com * são obrigatórios.</p></div>
+ <form name="profissionais" method="POST" action="/obrigado.html" data-netlify="true" data-netlify-honeypot="campo-extra" data-demo-form>
+  <input type="hidden" name="form-name" value="profissionais">
+  <div class="honeypot" aria-hidden="true"><label>Deixe este campo em branco <input type="text" name="campo-extra" tabindex="-1" autocomplete="off"></label></div>
+  <p class="fieldset-heading">Informações básicas</p>
+  <div class="form-fields"><div class="field"><label for="nome">Nome <span aria-hidden="true">*</span></label><input id="nome" name="nome" type="text" autocomplete="name" maxlength="90" placeholder="Seu nome" required></div><div class="field"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="voce@exemplo.com" required></div><div class="field"><label for="telefone">Telefone (opcional)</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" maxlength="25" placeholder="Ex.: (68) 99999-9999" ></div><div class="field"><label for="municipio">Município de atuação <span aria-hidden="true">*</span></label><input id="municipio" name="municipio" type="text" maxlength="90" placeholder="Ex.: Rio Branco" required></div></div>
+  <p class="fieldset-heading">Sua atuação</p>
+  <div class="form-fields"><div class="field field-full"><label for="especialidade">Especialidade principal <span aria-hidden="true">*</span></label><select id="especialidade" name="especialidade" required><option value="">Selecione sua especialidade</option><option value="eletrica">Elétrica</option>
+<option value="hidraulica">Hidráulica</option>
+<option value="informatica">Informática</option>
+<option value="montagem">Montagem</option>
+<option value="pintura">Pintura</option>
+<option value="limpeza">Limpeza</option><option value="outros">Outros serviços</option></select></div>
+  <div class="field"><label for="bairros">Bairros de atuação (opcional)</label><input id="bairros" name="bairros" type="text" maxlength="180" placeholder="Ex.: Centro, Bosque, Estação" ></div>
+  <div class="field"><label for="disponibilidade">Disponibilidade (opcional)</label><select id="disponibilidade" name="disponibilidade"><option value="">Não informada</option><option value="dias_uteis">Dias úteis</option><option value="finais_de_semana">Finais de semana</option><option value="flexivel">Horários flexíveis</option></select></div>
+  <div class="field field-full"><label for="apresentacao">Conte mais sobre sua experiência (opcional)</label><textarea id="apresentacao" name="apresentacao" maxlength="700" rows="4" placeholder="Quais serviços você costuma realizar?" data-counter></textarea><span class="field-support">Não inclua documentos ou dados sensíveis. <span data-count-for="apresentacao">0/700</span></span></div></div>
+  <div class="form-consent"><label class="checkbox"><input type="checkbox" name="aceite_demo" value="sim" required><span>Li a <a href="/privacidade.html" target="_blank" rel="noopener">informação sobre privacidade</a> e estou ciente de que este é um protótipo acadêmico, sem atendimento real. <strong>*</strong></span></label></div><div class="local-form-warning" role="status" aria-live="polite" hidden></div><button type="submit" class="btn btn-primary btn-lg form-submit">Enviar cadastro <svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#arrow-up-right"></use></svg></button><p class="form-hint"><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#lock"></use></svg> Seus dados não serão exibidos publicamente nesta página.</p>
+ </form></div>
+ </div></section></main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><a class="brand" href="/index.html" aria-label="ConectaServiços — início"><img src="/assets/brand.svg" alt="" width="38" height="38"><span>Conecta<strong>Serviços</strong></span></a>
+        <p>Uma ideia para aproximar necessidades do dia a dia e profissionais de diferentes especialidades.</p>
+        <span class="footer-demo"><svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#info"></use></svg> Protótipo acadêmico, sem prestação real de serviços.</span>
+      </div>
+      <div><h3>Explore</h3><a href="/index.html#servicos">Serviços</a><a href="/index.html#como-funciona">Como funciona</a><a href="/index.html#duvidas">Perguntas frequentes</a></div>
+      <div><h3>Cadastros</h3><a href="/solicitar.html">Preciso de um serviço</a><a href="/profissionais.html">Sou profissional</a></div>
+      <div><h3>Informações</h3><a href="/privacidade.html">Privacidade e dados</a><a href="https://github.com/MarcosVini753/ConectaServicos" rel="noopener noreferrer" target="_blank">Código do projeto <svg class="icon " aria-hidden="true"><use href="/assets/icons.svg#arrow-up-right"></use></svg></a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> ConectaServiços.</span><span>Projeto demonstrativo de Sistemas de Informação.</span></div>
+  </footer>
+</body>
+</html>
